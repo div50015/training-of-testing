@@ -11,7 +11,6 @@ def test_demoqa_practice_form_registration():
     # GIVEN
     browser.config.window_width = 1000
     browser.config.window_height = 1100
-
     browser.open('https://demoqa.com/automation-practice-form')
     browser.driver.execute_script("document.querySelector('.body-height').style.transform='scale(.65)'")
 
