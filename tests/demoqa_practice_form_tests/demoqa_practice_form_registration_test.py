@@ -31,12 +31,10 @@ def test_demoqa_practice_form_registration():
     import tests
 
     browser.element("#uploadPicture").send_keys(
-        os.path.dirname(tests.__file__), "/demoqa_practice_form_tests/resources/foto.jpg"
+        os.path.dirname(tests.__file__), "/demoqa_practice_form_tests/photo.jpg"
     )
 
-
     browser.element('#currentAddress').type('Moskovskaya strit 10')
-
 
     browser.element("#state").click()
     browser.all("[id^=react-select][id*=option]").element_by(have.text("NCR")).click()
