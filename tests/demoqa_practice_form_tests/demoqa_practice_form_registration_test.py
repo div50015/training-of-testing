@@ -27,7 +27,7 @@ def test_demoqa_practice_form_registration():
     # browser.element('#uploadPicture').set_value(
     #     str(Path(tests.__file__).parent.joinpath('demoqa_pactice_form_tests/resources/foto.jpg').absolute())
     browser.element("#uploadPicture").send_keys(
-        os.path.dirname(tests.__file__), "/demoqa_practice_form_tests/photo.jpg"
+        os.path.dirname(tests.__file__), "/demoqa_practice_form_tests/resources/photo.jpg"
     )
     browser.element('#currentAddress').type('Moskovskaya Street 10')
     browser.element("#state").click()
